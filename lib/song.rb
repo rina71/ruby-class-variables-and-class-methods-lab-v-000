@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist, :genre
   @@count = 0
@@ -30,7 +31,7 @@ class Song
   end
   def self.genre_count
     @@genres.uniq.each{|h| @@genre_count[h] = @@genres.count(h)}
-  
+
   end
   def self.artist_count
     # @@artist_count.count
