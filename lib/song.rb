@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     binding.pry
     @@genres.uniq.each{|h| @@genre_count[h] = @@genres.count(h)}
-
+    @@genre_count
   end
   def self.artist_count
     # @@artist_count.count
